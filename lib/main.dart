@@ -1,5 +1,9 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:helloflutter/scaffold_widgets.dart';
+
+import 'iGDemoPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const ScaffoldDemoPage(),
+      home: const IgDemoPage(),
     );
   }
 }
