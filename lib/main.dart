@@ -1,9 +1,14 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:helloflutter/centerdemo.dart';
+import 'package:helloflutter/containerdemo.dart';
 import 'package:helloflutter/scaffold_widgets.dart';
+import 'package:helloflutter/scrolling.dart';
 
+import 'distridemo.dart';
 import 'iGDemoPage.dart';
+import 'textdemo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +21,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      home: const IgDemoPage(),
-    );
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        home: SafeArea(
+          child: const ScrollDemoPage(),
+        ));
   }
 }

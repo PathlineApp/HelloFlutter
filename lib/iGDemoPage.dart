@@ -25,7 +25,19 @@ class IgDemoPage extends StatelessWidget {
           ],
           backgroundColor: Colors.white),
       body: Container(
-        decoration: BoxDecoration(color: Colors.blue),
+        decoration: BoxDecoration(color: Colors.black),
+        child: Column(children: [
+          Row(
+            children: [
+              CircleAvatar(
+                backgroundColor: Colors.blue,
+              ),
+              CircleAvatar(
+                backgroundColor: Colors.red,
+              ),
+            ],
+          )
+        ]),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
@@ -57,5 +69,14 @@ class IgDemoPage extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class IgPost extends StatelessWidget {
+  const IgPost({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
